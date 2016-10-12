@@ -1,0 +1,353 @@
+@charset "utf-8";
+@font-face {
+    font-family: EK2003Regular;
+    src: url(EK2003Regular.ttf);
+}
+/* CSS Document */
+   
+	html{
+		height: 100%;
+		font-size:100%;
+	}
+
+	body{
+		height: 100%;
+		font-family:EK2003Regular;
+		margin: auto;
+		position: relative;
+        background-color:#112233 ;
+        font-size:4vmin;
+
+	}
+
+
+	img {
+    	max-width: 100vmin;
+    	height: 25vmin;
+    	width: auto; /* ie8 */
+    	position: relative;
+	}
+
+	.header{
+
+		background-color: #d35400;
+      	height:30vmin;  
+   		margin: auto;
+   		position: relative;
+	}
+
+	
+
+	.menu {
+		font-size:3.5vmin;
+		font-family:EK2003Regular;
+		margin: auto;
+		position: relative;
+		color: #112233;
+		margin-top:0.8vmin;
+
+	}
+
+	.menu li {
+	    display: inline;
+	}
+
+	.menu li a {
+		border-radius :0.5vmin;
+	    background-color: transparent;
+	    color: #112233;
+	    padding: 10px 20px;
+	    text-decoration: none;
+	}
+
+	.menu li a:hover {
+	    background-color: #112233;
+	    color: #d35400;
+		transition: background 0.25s linear;
+		-webkit-transition: background 0.25s linear;
+		-moz-transition: background 0.25s linear;
+	}
+
+
+	.display{
+
+		height:70vmin; 
+		position: relative;
+
+	}
+
+	.h2{
+		text-align: center;
+		font-size: 7vmin;
+		color: #d35400;
+		font-family:EK2003Regular; 
+
+	}
+
+	.h3{
+		text-align: center;
+		font-size: 3.5vmin;
+		color: #d35400;
+		font-family:EK2003Regular; 
+
+	}
+
+
+	/*toggle*/
+	
+	.cont{
+		margin-left: 30%;	
+
+	}
+
+	.off{
+		padding-left: 5%;
+		padding-top: 5%;
+		font-size: 2.5vmin;
+		color: #112233;
+		font-family:EK2003Regular; 
+		position:absolute;
+		z-index: +1;
+	}
+	
+	.on{
+		padding-left: 65%;
+		padding-top: 5%;
+		font-size:2.5vmin;
+		color: #112233;
+		font-family:EK2003Regular; 
+		position:absolute;
+		z-index: +1;
+	}
+
+
+	.toggle_1{
+		width:11vmin;
+		height: 4vmin;
+		display: block;
+		border: 0.5vmin solid 	#d35400;
+		border-radius :0.5vmin;
+		position:relative;
+	}
+	
+
+
+ 	.toggle_control_1:after{
+
+		content:"";
+		width:5.5vmin;
+		height:4vmin;
+		display:block;
+		background-color: #d35400;
+		border-radius:1px;
+		position:relative;
+
+	}
+	
+	.toggle_input_1{
+		display:none;
+	}
+
+	.toggle_input_1:checked + .toggle_control_1:after{
+		background-color: #d35400;
+		left:6vmin;
+	}
+	/*buuton*/
+
+	.button{
+		width:30vmin;
+		height:5vmin;
+		display: block;
+		background-color: #d35400;
+		border-radius :0.5vmin;
+		border-color:  #d35400;
+		font-size: 0.8em;
+		font-family:EK2003Regular;
+		position:relative;
+		border-style: solid;
+	}
+
+	/*link*/
+
+	.sign-link{
+		font-size: 0.7em;
+		font-family:EK2003Regular;
+		position:relative;
+		color:  #d35400;
+		text-decoration: none;
+
+
+	}
+
+	.sign-link:hover{
+		color:  #ff8636;
+		text-decoration: underline;
+	}
+
+
+	input{
+		color: #d35400;
+	
+	}
+
+	.field-form{
+		width:30vmin;
+		height: 5vmin;
+		display: block;
+		background-color: #0f1e2c;
+		border-radius :0.5vmin;
+		border-color:  #0f1e2c;
+		font-size: 0.8em;
+		font-family:EK2003Regular;
+		position:relative;
+		border-style: solid;
+	}
+
+	.confirm{
+		width:30vmin;
+		height:5vmin;
+		display: block;
+		background-color: #d35400;
+		border-radius :0.5vmin;
+		border-color:  #d35400;
+		font-size: 1em;
+		font-family:EK2003Regular;
+		position:relative;
+		border-style: solid;
+	}
+
+
+	table{
+		width: 50%;
+		height: 30%;
+		margin-right: auto;
+		margin-left: auto;
+		table-layout: fixed;
+		vertical-align: middle; 
+		position: relative;
+  	}
+
+
+	td{
+		height: 7vmin;
+		padding: auto;
+		font-size: 1em;
+		color: #d35400;
+		font-family:EK2003Regular;
+		vertical-align: middle; 
+	}
+
+/*select*/
+
+
+	.select{
+
+		width:30vmin;
+		height:5vmin;
+		display: block;
+		background-color: #0f1e2c;
+		border-radius :0.5vmin;
+		border-color:  #0f1e2c;
+		font-size: 0.8em;
+		font-family:EK2003Regular;
+		position:relative;
+		border-style: solid;
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	text-align: center;
+	}
+	
+	
+
+	select {
+		color: #d35400;
+		
+}
+
+
+
+
+	ul li{
+	 	color: #d35400;
+	 	display: block;
+	 	position: relative;
+	 	float: left;
+	 
+	}
+
+	ul li input[type=radio]{
+	 	position: absolute;
+	 	visibility: hidden;
+	}
+
+	ul li label{
+	 	display: block;
+	 	position: relative;
+	 	font-weight: 300;
+	 	padding:1vmin 25vmin 8vmin 15vmin;
+	 	margin: 2vmin auto;
+	 	height: 0vmin;
+	 	z-index: 9;
+	 	cursor: pointer;
+	 	-webkit-transition: all 0.25s linear;
+	}
+
+	ul li:hover label{
+		color: #d35400;
+	}
+
+	ul li .check{
+		display: block;
+		position: absolute;
+		border: 0.8vmin solid #0f1e2c;
+		border-radius: 100%;
+		height: 4vmin;
+		width: 4vmin;
+		top: 5vmin;
+		left: 3vmin;
+		z-index: 5;
+		transition: border .25s linear;
+		-webkit-transition: border .25s linear;
+	}
+
+	ul li:hover .check {
+	  	border: 0.8vmin solid #d35400;
+	}
+
+	ul li .check::before {
+		display: block;
+		position: absolute;
+		content: '';
+		border-radius: 100%;
+		height: 2.5vmin;
+	 	width: 2.5vmin;
+	 	top: 0.8vmin;
+		left: 0.75vmin;
+	 	margin: auto;
+		transition: background 0.25s linear;
+		-webkit-transition: background 0.25s linear;
+	}
+
+	input[type=radio]:checked ~ .check {
+	 	border: 0.8vmin solid #d35400;
+	}
+
+	input[type=radio]:checked ~ .check::before{
+	 	background: #d35400;
+	}
+
+	input[type=radio]:checked ~ label{
+	 	color: #d35400;
+	}
+
+
+	.cura{
+		text-align: center;
+		position: relative;
+		font-size: 0.5em;
+		font-family:EK2003Regular; 
+		color: #d35400;
+		vertical-align:bottom;
+		position: relative;
+		margin-top:30vmin;
+	}

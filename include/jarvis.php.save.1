@@ -1,0 +1,26 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+if(!defined('AllowAccess')) {
+  // die('Direct access not permitted');
+}
+include_once '../dbconnect.php';
+
+
+function AddDevice($DeviceName,$gpio,$icon)
+ {
+  shell_exec("gpio -1 mode ".$gpio."out");
+  $state=shell_exec("gpio -1 read".$gpio);
+  mysql_query("INSERT INTO gpiodevice(name,icon) VALUES('$DeviceName','$icon')");
+ }
+$D="7amada";
+$gpio=5;
+$icon="zebbi";
+AddDevice('test','5555','akajsok');
+ echo mysql_query("INSERT INTO gpiodevice(name,icon) VALUES('$DeviceName','$icon')");
+
+
+
+
+?>
